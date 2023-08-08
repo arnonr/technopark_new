@@ -2,3 +2,11 @@
 .swiper-pagination-bullet-active {
     background-color: #ff6600 !important;
 }
+
+.text-color-primary{
+    color:#ff6600
+}
+
+.item-link{
+    cursor: pointer;
+}

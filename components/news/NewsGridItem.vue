@@ -1,8 +1,8 @@
 <template>
   <div
-    v-if="!item.blog_quote"
+    v-if="item"
     :class="`blog__grid-item ${masonry ? 'blog__masonary' : ''} ${
-      !item.img ? 'no-img' : ''
+      !item.news_file ? 'no-img' : ''
     }`"
   >
     <div class="blog__item-10 white-bg transition-3 mb-30 fix">
@@ -13,8 +13,8 @@
       </div>
       <div class="blog__content-10">
         <div class="blog__content-10-top">
-          <div v-if="!item.img" class="blog__tag-10">
-            <a href="#">{{ item.tag }}</a>
+          <div v-if="!item.news_file" class="blog__tag-10">
+            <a href="#">{{ item.news_type.name }}</a>
           </div>
 
           <h3 class="blog__title-10">

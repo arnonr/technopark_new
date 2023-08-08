@@ -61,7 +61,7 @@
     <div class="div-btn-annouce mt-15">
       <div class="col">
         <div class="tp-button-demo text-end">
-          <NuxtLink to="/news" class="tp-btn-border-brown"
+          <NuxtLink to="/video" class="tp-btn-border-brown"
             >วิดีโอทั้งหมด</NuxtLink
           >
         </div>
