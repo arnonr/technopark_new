@@ -3,16 +3,18 @@
     <li
       v-for="(menu, i) in menuData"
       :key="i"
-      :class="`has-dropdown ${menu.megaMenu ? 'has-mega-menu' : ''}`"
+      :class="`${menu.hasDropdown ? 'has-dropdown': ''}${menu.megaMenu ? 'has-dropdown has-mega-menu' : ''}`"
     >
       <NuxtLink :to="menu.link">
         {{ menu.title }}
       </NuxtLink>
       <ul v-if="menu.hasDropdown" class="submenu">
-        <li v-for="(sub, i) in menu.submenus" :key="i">
+        <li v-for="(sub, i) in menu.submenus" :key="i" class="submenu-item">
           <NuxtLink :to="sub.link">
             {{ sub.title }}
+            <hr style="width:100%;color:#ddd;padding:0px;margin:0;">
           </NuxtLink>
+         
         </li>
       </ul>
       <ul v-if="menu.mega_menus" class="mega-menu">
@@ -48,5 +50,27 @@ export default {
 
 .main-menu-4 ul li:hover > a::after {
     color: #000;
+}
+
+
+.main-menu ul li .submenu li a::before {
+    display: none
+}
+
+.main-menu ul li .submenu li:hover > a {
+    padding-left: 25px;
+}
+
+/* .submenu-item {
+    border-bottom: solid 1px #efefef;
+    
+} */
+/* .main-menu ul li:hover > .submenu {
+   line-height: 2.5em;
+} */
+
+.main-menu ul li .submenu {
+    min-width: 250px;
+    line-height: 2.5em;
 }
 </style>

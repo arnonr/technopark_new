@@ -2,6 +2,14 @@
   <nav class="mean-nav">
     <ul>
       <template v-for="(menu, i) in menuData" :key="i">
+
+        <li
+          v-if="!menu.hasDropdown && !menu.megaMenu && !menu.pages"
+          class="has-dropdown"
+        >
+          <nuxt-link :href="menu.link">{{ menu.title }}</nuxt-link>
+        </li>
+
         <li
           v-if="menu.hasDropdown && !menu.megaMenu && !menu.pages"
           class="has-dropdown"
