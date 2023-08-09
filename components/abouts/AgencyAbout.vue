@@ -36,7 +36,7 @@
             </p>
 
             <div class="about__btn-5">
-              <nuxt-link href="/about" class="tp-btn-blue">More About Us</nuxt-link>
+              <nuxt-link to="/about" class="tp-btn-blue">More About Us</nuxt-link>
             </div>
           </div>
         </div>

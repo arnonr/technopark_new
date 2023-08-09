@@ -42,7 +42,7 @@
 
                 <div class="footer__widget-content">
                   <ul>
-                    <li><nuxt-link href="/about">About Us</nuxt-link></li>
+                    <li><nuxt-link to="/about">About Us</nuxt-link></li>
                     <li><nuxt-link href="/terms">Terms of Use</nuxt-link></li>
                     <li><nuxt-link href="/services">Our Services</nuxt-link></li>
                     <li><nuxt-link href="/help">Changelog</nuxt-link></li>

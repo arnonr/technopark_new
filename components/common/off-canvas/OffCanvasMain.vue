@@ -33,7 +33,7 @@
                             <li><nuxt-link href="/home-freelancer">Freelancer</nuxt-link></li>
                         </ul>
                       </li>
-                      <li><nuxt-link href="/about">About</nuxt-link></li>
+                      <li><nuxt-link to="/about">About</nuxt-link></li>
                       <li class="has-dropdown">
                         <nuxt-link href="/services">Service</nuxt-link>
                         <ul class="submenu">

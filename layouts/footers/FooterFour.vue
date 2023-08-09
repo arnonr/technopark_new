@@ -20,7 +20,7 @@
                       <nuxt-link href="/portfolio-masonry">สมัครงาน</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link href="/about"
+                      <nuxt-link to="/about"
                         >อุทยานเทคโนโลยี กรุงเทพฯ</nuxt-link
                       >
                     </li>

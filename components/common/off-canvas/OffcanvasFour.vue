@@ -31,7 +31,7 @@
               <nav>
                   <ul>
                     <li><nuxt-link href="/home-agency">Home</nuxt-link></li>
-                    <li><nuxt-link href="/about">About</nuxt-link></li>
+                    <li><nuxt-link to="/about">About</nuxt-link></li>
                     <li><nuxt-link href="/services">Service</nuxt-link></li>
                     <li><nuxt-link href="/blog-grid">Blog</nuxt-link></li>
                     <li><nuxt-link href="/portfolio">Portfoilo</nuxt-link></li>

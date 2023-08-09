@@ -72,7 +72,7 @@
                 <div class="footer__widget-content">
                   <ul>
                     <li><nuxt-link href="/home-architecture">Home</nuxt-link></li>
-                    <li><nuxt-link href="/about">About</nuxt-link></li>
+                    <li><nuxt-link to="/about">About</nuxt-link></li>
                     <li><nuxt-link href="/portfolio-2">Projects</nuxt-link></li>
                     <li><nuxt-link href="/services-2">Services</nuxt-link></li>
                     <li><nuxt-link href="/blog-grid">Blog</nuxt-link></li>

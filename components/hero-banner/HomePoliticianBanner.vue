@@ -19,7 +19,7 @@
               <p>Become a part of our team, sign up for updates.</p>
 
               <div class="slider__btn-10">
-                <nuxt-link href="/about" class="tp-btn-7">
+                <nuxt-link to="/about" class="tp-btn-7">
                   About Our Strategy 
                   <i class="fa-regular fa-angle-right"></i>
                 </nuxt-link>

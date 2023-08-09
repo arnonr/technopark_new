@@ -105,7 +105,7 @@
 
                         <div class="footer__widget-content">
                            <ul>
-                              <li><nuxt-link href="/about">History</nuxt-link></li>
+                              <li><nuxt-link to="/about">History</nuxt-link></li>
                               <li><nuxt-link href="/team">Leadership</nuxt-link></li>
                               <li><nuxt-link href="/event-details">Events</nuxt-link></li>
                               <li><nuxt-link href="/home-politician">Donations</nuxt-link></li>
@@ -149,7 +149,7 @@
                         <div class="footer__link-10 text-md-end">
                            <nuxt-link href="/policy">Privacy</nuxt-link>
                            <nuxt-link href="/terms">Terms</nuxt-link>
-                           <nuxt-link href="/about">About Us</nuxt-link>
+                           <nuxt-link to="/about">About Us</nuxt-link>
                            <nuxt-link href="/help">Support</nuxt-link>
                            <nuxt-link href="/faq">FAQ</nuxt-link>
                            <nuxt-link href="/blog-grid">Blog</nuxt-link>

@@ -72,7 +72,7 @@
               </div>
             </div>
             <div class="about__btn">
-              <nuxt-link href="/about" class="tp-btn">Discover Now</nuxt-link>
+              <nuxt-link to="/about" class="tp-btn">Discover Now</nuxt-link>
             </div>
           </div>
         </div>

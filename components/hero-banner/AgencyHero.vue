@@ -14,7 +14,7 @@
             <h3 class="slider__title-5">Digital Agency with Excellence Services.</h3>
             <p>The 3 golden rules professional graphic designer don’t want you to know about.</p>
 
-            <nuxt-link href="/about" class="tp-btn-blue-sm">More About Us</nuxt-link>
+            <nuxt-link to="/about" class="tp-btn-blue-sm">More About Us</nuxt-link>
           </div>
         </div>
         <div class="col-xxl-6 col-xl-6 col-lg-6">

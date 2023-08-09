@@ -76,7 +76,7 @@
                 <div class="footer__widget-content">
                   <ul>
                     <li><nuxt-link href="/home-photographer">Home</nuxt-link></li>
-                    <li><nuxt-link href="/about">About</nuxt-link></li>
+                    <li><nuxt-link to="/about">About</nuxt-link></li>
                     <li><nuxt-link href="/portfolio-2">Portfolio</nuxt-link></li>
                     <li><nuxt-link href="/services">Services</nuxt-link></li>
                     <li><nuxt-link href="/pricing">Pricing</nuxt-link></li>

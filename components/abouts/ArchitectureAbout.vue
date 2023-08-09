@@ -59,7 +59,7 @@
               </div>
             </div>
             <div class="about__btn-8 d-block d-sm-flex align-items-center">
-              <nuxt-link href="/about" class="tp-btn-border-8 mb-20 mr-30">More About Us</nuxt-link>
+              <nuxt-link to="/about" class="tp-btn-border-8 mb-20 mr-30">More About Us</nuxt-link>
               <a @click.prevent="handleVideoPopup" href="#" class="about-play-btn-2 mb-20 popup-video">
                 <span>
                   <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">

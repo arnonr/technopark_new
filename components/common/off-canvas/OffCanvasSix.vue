@@ -28,10 +28,10 @@
               <nav>
                   <ul>
                     <li><nuxt-link href="/">Home</nuxt-link></li>
-                    <li><nuxt-link href="/about">About</nuxt-link></li>
+                    <li><nuxt-link to="/about">About</nuxt-link></li>
                     <li><nuxt-link href="/services">Service</nuxt-link></li>
                     <li><nuxt-link href="/blog">Blog</nuxt-link></li>
-                    <li><nuxt-link href="/about">Pages</nuxt-link></li>
+                    <li><nuxt-link to="/about">Pages</nuxt-link></li>
                     <li><nuxt-link href="/contact">Contact</nuxt-link></li>
                   </ul>
               </nav>

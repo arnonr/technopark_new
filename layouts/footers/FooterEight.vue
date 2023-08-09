@@ -21,7 +21,7 @@
                       <li><nuxt-link href="/home-portfolio">Home</nuxt-link></li>
                       <li><nuxt-link href="/services">Services</nuxt-link></li>
                       <li><nuxt-link href="/portfolio">Portfolio</nuxt-link></li>
-                      <li><nuxt-link href="/about">About</nuxt-link></li>
+                      <li><nuxt-link to="/about">About</nuxt-link></li>
                       <li><nuxt-link href="/contact">Contact</nuxt-link></li>
                     </ul>
                   </div>
