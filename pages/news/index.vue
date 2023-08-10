@@ -102,6 +102,9 @@ const fetchNewsType = async () => {
 };
 fetchNewsType();
 
+
+
+
 const fetchItems = async () => {
   await $fetch(`${runtimeConfig.public.apiBase}/news`, {
     params: {

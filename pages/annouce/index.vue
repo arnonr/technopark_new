@@ -42,6 +42,7 @@
           />
         </div>
       </div>
+
     </div>
   </section>
 </template>
@@ -50,9 +51,12 @@
 // Import
 import BlogPagination from "~/components/common/pagination/BlogPagination.vue";
 const runtimeConfig = useRuntimeConfig();
+const router = useRouter();
+const route = useRoute();
 
 // Variable
 const items = ref([]);
+
 const perPage = ref(20);
 const currentPage = ref(1);
 const totalPage = ref(1);
@@ -62,27 +66,42 @@ const search = ref({
   is_publish: 1,
 });
 
-// Function Fetch
-const fetchItems = async () => {
-  await $fetch(`${runtimeConfig.public.apiBase}/annouce`, {
-    params: {
-      ...search.value,
-      perPage: perPage.value,
-      currentPage: currentPage.value,
-    },
-  })
-    .then((res) => {
-      items.value = res.data;
-      totalPage.value = res.totalPage;
-      totalItems.value = res.totalData;
-    })
-    .catch((error) => error.data);
-};
-fetchItems();
+if (route.query.page) {
+  currentPage.value = route.query.page;
+}
 
-onMounted(() => {});
+const { data: res } = await useAsyncData(
+  "annouce",
+  async () => {
+    let data = await $fetch(`${runtimeConfig.public.apiBase}/annouce`, {
+      params: {
+        ...search.value,
+        perPage: perPage.value,
+        currentPage: currentPage.value,
+      },
+    });
+    items.value = data.data;
+    totalPage.value = data.totalPage;
+    totalItems.value = data.totalData;
+    return data;
+  }
+);
 
-watchEffect(fetchItems);
+items.value = res.value.data;
+totalPage.value = res.value.totalPage;
+totalItems.value = res.value.totalData;
+
+watch(
+  [currentPage, search],
+  () => {
+    router.replace({
+      name: "annouce",
+      query: { page: currentPage.value },
+    });
+    refreshNuxtData("annouce");
+  },
+  { deep: true }
+);
 
 watchEffect(() => {
   if (currentPage.value > totalPage.value) currentPage.value = totalPage.value;

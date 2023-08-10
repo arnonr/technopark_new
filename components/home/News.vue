@@ -1,6 +1,6 @@
 <template>
   <section class="portfolio__area pt-40 pb-40">
-    <div class="container" v-if="items.length != 0">
+    <div class="container" v-if="newsType.length != 0">
       <div class="row">
         <div class="col-xxl-12">
           <div class="portfolio__masonary-btn-2 text-center mb-50">
@@ -59,32 +59,30 @@ const search = ref({
   is_publish: 1,
 });
 
-const fetchNewsType = async () => {
-  await $fetch(`${runtimeConfig.public.apiBase}/news-type`, {
+const { data: resNewsType } = await useAsyncData("newsType", async () => {
+  let data = await $fetch(`${runtimeConfig.public.apiBase}/news-type`, {
     params: {
       is_publish: 1,
     },
-  })
-    .then((res) => {
-      let d = res.data.map((e) => {
-        e.category = "news-" + e.name;
-        return e;
-      });
+  });
 
-      d.unshift({
-        id: null,
-        name: "ข่าวทั้งหมด",
-        category: "news-all",
-      });
+  let d = data.data.map((e) => {
+    e.category = "news-" + e.name;
+    return e;
+  });
+  d.unshift({
+    id: null,
+    name: "ข่าวทั้งหมด",
+    category: "news-all",
+  });
 
-      newsType.value = d;
-    })
-    .catch((error) => error.data);
-};
-fetchNewsType();
+  return { ...data, data: d };
+});
 
-const fetchItems = async () => {
-  await $fetch(`${runtimeConfig.public.apiBase}/news`, {
+newsType.value = resNewsType.value.data;
+
+const { data: res } = await useAsyncData("news", async () => {
+  let data = await $fetch(`${runtimeConfig.public.apiBase}/news`, {
     params: {
       ...search.value,
       news_type_id:
@@ -94,20 +92,17 @@ const fetchItems = async () => {
       perPage: 8,
       currentPage: 1,
     },
-  })
-    .then((res) => {
-      items.value = res.data;
-    })
-    .catch((error) => error.data);
-};
-fetchItems();
+  });
+  items.value = data.data;
+  return data;
+});
+
+items.value = res.value.data;
 
 const onChangeNewsType = async (id, category) => {
   search.value.news_type_id = id;
-  await fetchItems();
+  refreshNuxtData("news");
   activeCategory.value = category;
-  search.value.news_type_id = id;
-  //
 };
 </script>
 
