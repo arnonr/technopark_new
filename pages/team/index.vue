@@ -149,6 +149,8 @@ export default {
 
 <script setup>
 // Variable
+const route = useRoute();
+const router = useRouter();
 const runtimeConfig = useRuntimeConfig();
 const items = ref([]);
 const departments = ref([]);
@@ -158,41 +160,70 @@ const search = ref({
 });
 
 // Function Fetch
-const fetchDepartments = async () => {
-  await $fetch(`${runtimeConfig.public.apiBase}/department`, {
-    params: {
-      is_publish: 1,
-    },
-  })
-    .then((res) => {
-      departments.value = res.data.map((e) => {
-        e.teamItems = [];
-        return e;
-      });
-      fetchItems();
-    })
-    .catch((error) => error.data);
-};
-fetchDepartments();
+// const fetchDepartments = async () => {
+//   await $fetch(`${runtimeConfig.public.apiBase}/department`, {
+//     params: {
+//       is_publish: 1,
+//     },
+//   })
+//     .then((res) => {
+//       departments.value = res.data.map((e) => {
+//         e.teamItems = [];
+//         return e;
+//       });
+//       fetchItems();
+//     })
+//     .catch((error) => error.data);
+// };
+// fetchDepartments();
 
-const fetchItems = async () => {
-  await $fetch(`${runtimeConfig.public.apiBase}/team`, {
+const { data: res } = await useAsyncData("team", async () => {
+  let data = await $fetch(`${runtimeConfig.public.apiBase}/team`, {
     params: {
       ...search.value,
     },
-  })
-    .then((res) => {
-      items.value = res.data;
+  });
+  return data;
+});
 
-      for (const it of res.data) {
-        const departmentIndex = departments.value.findIndex(
-          (el) => it.department_id == el.id
-        );
-        departments.value[departmentIndex].teamItems.push(it);
-      }
-    })
-    .catch((error) => error.data);
-};
+items.value = res.value.data;
+
+const { data: resDepartments } = await useAsyncData("department", async () => {
+  let data = await $fetch(`${runtimeConfig.public.apiBase}/department`, {
+    params: {
+      is_publish: 1,
+    },
+  });
+
+  let d = data.data.map((e) => {
+    e.teamItems = [];
+    return e;
+  });
+
+  return { ...data, data: d };
+});
+
+departments.value = resDepartments.value.data;
+
+onMounted(() => {
+  for (const it of res.value.data) {
+    const departmentIndex = resDepartments.value.data.findIndex(
+      (el) => it.department_id == el.id
+    );
+    departments.value[departmentIndex].teamItems.push(it);
+  }
+});
+
+watch(
+  [search],
+  () => {
+    router.replace({
+      name: "team",
+    });
+    refreshNuxtData("team");
+  },
+  { deep: true }
+);
 
 // Function Change
 onMounted(() => {});
@@ -242,7 +273,7 @@ useHead({
     180deg,
     rgba(255, 102, 0, 0.95) 0.01%,
     rgba(230, 92, 0, 0.95) 100%
-  );    
+  );
 }
 
 .team__contact-wrapper > p {

@@ -91,22 +91,20 @@ const search = ref({
   is_publish: 1,
 });
 
-const fetchItems = async () => {
-  await $fetch(`${runtimeConfig.public.apiBase}/video`, {
+const { data: res } = await useAsyncData("video", async () => {
+  let data = await $fetch(`${runtimeConfig.public.apiBase}/video`, {
     params: {
       ...search.value,
       perPage: 4,
       currentPage: 1,
     },
-  })
-    .then((res) => {
-      items.value = res.data;
-      itemFirst.value = res.data[0];
-      items.value.shift();
-    })
-    .catch((error) => error.data);
-};
-fetchItems();
+  });
+  return data;
+});
+
+items.value = [...res.value.data];
+itemFirst.value = res.value.data[0];
+items.value.shift();
 
 const handleVideoPopup = (it) => {
   videoUrl.value = it.video_url;

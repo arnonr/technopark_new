@@ -12,7 +12,7 @@
     >
       <!-- data-bs-target="#exampleModal" -->
       <div class="blog__thumb-10 w-img fix">
-        <img :src="item.video_file" alt="blog img" v-if="item.video_file" />
+        <img :src="item.video_file" :alt="item.title" v-if="item.video_file" />
       </div>
       <div class="blog__content-10">
         <div class="blog__content-10-top">

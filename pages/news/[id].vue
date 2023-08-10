@@ -116,14 +116,15 @@ const route = useRoute();
 
 const item = ref(null);
 
-const fetchItem = async () => {
-  await $fetch(`${runtimeConfig.public.apiBase}/news/${route.params.id}`)
-    .then((res) => {
-      item.value = res.data;
-    })
-    .catch((error) => error.data);
-};
-fetchItem();
+const { data: res } = await useAsyncData(
+  "news",
+  async () => {
+    let data = await $fetch(`${runtimeConfig.public.apiBase}/news/${route.params.id}`);
+    return data;
+  }
+);
+
+item.value = res.value.data;
 
 useHead({
   title: "ข่าวอุทยานเทคโนโลยี มจพ.",

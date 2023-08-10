@@ -7,7 +7,7 @@
         <table class="table table-bordered table-striped table-news-document">
           <thead>
             <tr>
-              <th style="width: 10px;" class="text-center">#</th>
+              <th style="width: 10px" class="text-center">#</th>
               <th style="width: 70%">หัวข้อข่าวประกาศ</th>
               <th class="text-center">ดาวน์โหลด</th>
             </tr>
@@ -54,20 +54,19 @@ const search = ref({
   is_publish: 1,
 });
 
-const fetchItems = async () => {
-  await $fetch(`${runtimeConfig.public.apiBase}/annouce`, {
+
+const { data: res } = await useAsyncData("annouce", async () => {
+  let data = await $fetch(`${runtimeConfig.public.apiBase}/annouce`, {
     params: {
       ...search.value,
       perPage: 8,
       currentPage: 1,
     },
-  })
-    .then((res) => {
-      items.value = res.data;
-    })
-    .catch((error) => error.data);
-};
-fetchItems();
+  });
+  return data;
+});
+
+items.value = res.value.data;
 </script>
 
 <style scoped>

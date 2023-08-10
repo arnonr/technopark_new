@@ -34,6 +34,7 @@ import VideoGridItem from "~/components/video/VideoGridItem.vue";
 import BlogPagination from "~/components/common/pagination/BlogPagination.vue";
 // Variable
 const route = useRoute();
+const router = useRouter();
 const runtimeConfig = useRuntimeConfig();
 const items = ref([]);
 const perPage = ref(12);
@@ -46,27 +47,40 @@ const search = ref({
 });
 
 // Function Fetch
-const fetchItems = async () => {
-  await $fetch(`${runtimeConfig.public.apiBase}/video`, {
+if (route.query.page) {
+  currentPage.value = route.query.page;
+}
+const { data: res } = await useAsyncData("video", async () => {
+  let data = await $fetch(`${runtimeConfig.public.apiBase}/video`, {
     params: {
       ...search.value,
       perPage: perPage.value,
       currentPage: currentPage.value,
     },
-  })
-    .then((res) => {
-      items.value = res.data;
-      totalPage.value = res.totalPage;
-      totalItems.value = res.totalData;
-    })
-    .catch((error) => error.data);
-};
+  });
+  items.value = data.data;
+  return data;
+});
+
+items.value = res.value.data;
+totalPage.value = res.value.totalPage;
+totalItems.value = res.value.totalData;
+
+watch(
+  [currentPage, search],
+  () => {
+    router.replace({
+      name: "video",
+      query: { page: currentPage.value },
+    });
+    refreshNuxtData("video");
+  },
+  { deep: true }
+);
 
 // Function Change
 
 onMounted(() => {});
-
-watchEffect(fetchItems);
 
 watchEffect(() => {
   if (currentPage.value > totalPage.value) currentPage.value = totalPage.value;

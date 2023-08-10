@@ -1,5 +1,5 @@
 <template>
-  <section class="slider__area p-relative"  v-if="items.length != 0">
+  <section class="slider__area p-relative" v-if="items.length != 0">
     <swiper
       class="slider__active-12 slider__height-12 swiper-container"
       :slidesPerView="1"
@@ -26,7 +26,7 @@
         :class="`slider__item-12 slider__bg-12 ${it.bg} d-flex align-items-center`"
       >
         <a :href="it.banner_url">
-          <img :src="it.banner_file" alt="slider img" style="width: 100%" />
+          <img :src="it.banner_file" :alt="it.title" style="width: 100%" />
         </a>
       </swiper-slide>
 
@@ -52,32 +52,27 @@ import {
   Pagination,
   Autoplay,
 } from "swiper";
-
 export default {
   components: { Swiper, SwiperSlide },
-  setup() {
+  async setup() {
     const runtimeConfig = useRuntimeConfig();
-
     const renderFraction = (currentClass, totalClass) => {
       return `<span class="${currentClass}"></span>
-              <span class="tp-swiper-fraction-divide"></span>
-            <span class="${totalClass}"></span>`;
+                <span class="tp-swiper-fraction-divide"></span>
+              <span class="${totalClass}"></span>`;
     };
 
     const items = ref([]);
-
-    const fetchItems = async () => {
-      await $fetch(`${runtimeConfig.public.apiBase}/banner`, {
+    const { data: res } = await useAsyncData("banner", async () => {
+      let data = await $fetch(`${runtimeConfig.public.apiBase}/banner`, {
         params: {
           is_publish: 1,
         },
-      })
-        .then((res) => {
-          items.value = res.data;
-        })
-        .catch((error) => error.data);
-    };
-    fetchItems();
+      });
+      return data;
+    });
+
+    items.value = res.value.data;
 
     return {
       items,
