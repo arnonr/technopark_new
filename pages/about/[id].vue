@@ -39,7 +39,7 @@
                   <div class="postbox__main-wrapper">
                     <div class="postbox__details-content-wrapper">
                       
-                      <div>{{ item.detail }}</div>
+                      <div v-html="it.detail"></div>
                     </div>
                   </div>
                 </div>
