@@ -78,4 +78,9 @@ export default {
   border-top: 0px;
   padding: 1em;
 }
+
+.blog__grid-item .blog__title-10 {
+    font-size: 16px;
+    font-weight: 500;
+}
 </style>

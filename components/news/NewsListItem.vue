@@ -17,7 +17,7 @@
                 </h3>
 
                 <p style="text-align: justify; text-indent: 2em">
-                  {{ item.detail.slice(0, 400) }}...
+                  {{ item.detail.replace( /(<([^>]+)>)/ig, '').slice(0, 400)  }}...
                 </p>
               </div>
 

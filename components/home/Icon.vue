@@ -57,4 +57,12 @@ const icons = ref([
 ]);
 </script>
 
-<style scoped></style>
+<style scoped>
+.brand__item-6 img {
+  opacity: 1;
+}
+
+.brand__item-6 img:hover {
+  opacity: 0.6;
+}
+</style>
