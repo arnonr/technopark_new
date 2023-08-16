@@ -110,9 +110,14 @@
                               <p class="team-tel">
                                 <i class="fa fa-phone"></i> {{ it.phone }}
                               </p>
-                              <p class="team-email mt-20">
-                                {{ it.email }}
-                              </p>
+                              <!-- <div class="row">
+                                <div class="col-md-12"> -->
+                               
+                                  <p class="team-email mt-20" style="overflow-wrap: anywhere;">
+                                    {{ it.email }}
+                                  </p>
+                                <!-- </div>
+                              </div> -->
                             </div>
                           </div>
                         </div>
@@ -281,10 +286,10 @@ useHead({
 }
 
 .team__title-10 {
-    font-weight: 600;
+  font-weight: 600;
 }
-.team__contact-overlay{
-    padding-left: 10px;
-    padding-right: 10px;
+.team__contact-overlay {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 </style>
