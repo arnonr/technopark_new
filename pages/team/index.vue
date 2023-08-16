@@ -279,4 +279,12 @@ useHead({
 .team__contact-wrapper > p {
   color: #fff;
 }
+
+.team__title-10 {
+    font-weight: 600;
+}
+.team__contact-overlay{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 </style>
