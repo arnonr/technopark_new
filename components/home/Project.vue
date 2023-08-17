@@ -13,11 +13,11 @@
           :key="index"
           style="margin-bottom: 30px"
         >
-          <a href="#" class="project-link-img">
+          <NuxtLink class="project-link-img" :to="it.url">
             <img :src="it.project_file" :alt="it.name" />
             <br />
             <span class="fw-bold">{{ it.name }}</span>
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -36,22 +36,22 @@ const project = ref([
   {
     name: "ศูนย์ปฏิบัติการ",
     project_file: "/images/iconwebtechnopark/center_black.png",
-    url: "#",
+    url: "/about/7",
   },
   {
     name: "หลักสูตร",
     project_file: "/images/iconwebtechnopark/program_black.png",
-    url: "#",
+    url: "/about/6",
   },
   {
     name: "65 ปี มจพ.",
     project_file: "/images/iconwebtechnopark/65_black.png",
-    url: "#",
+    url: "/about/8",
   },
   {
     name: "ผลงานโดดเด่น",
     project_file: "/images/iconwebtechnopark/project_black.png",
-    url: "#",
+    url: "/about/9",
   },
 ]);
 </script>
@@ -66,5 +66,4 @@ const project = ref([
   filter: brightness(0) saturate(100%) invert(55%) sepia(77%) saturate(4539%)
     hue-rotate(0deg) brightness(101%) contrast(106%);
 }
-
 </style>
