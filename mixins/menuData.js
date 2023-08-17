@@ -33,7 +33,7 @@ export default {
             {
               title:
                 "เทคโนโลยีบัณฑิต เทคโนโลนียานยนต์สมัยใหม่และระบบอัติโนมัติ (NATT)",
-              link: "/",
+              link: "/about/6",
             },
           ],
           //   mega_menus: [
