@@ -11,11 +11,11 @@
           :key="index"
           style="margin-bottom: 30px"
         >
-          <a href="#" class="project-link-img">
+          <NuxtLink class="project-link-img" :to="it.url">
             <img :src="it.icon_file" :alt="it.name" style="width: 80%;"/>
             <br /><br />    
             <span class="fw-bold">{{ it.name }}</span>
-          </a>
+            </NuxtLink>
         </div>
       </div>
     </div>
@@ -35,24 +35,25 @@ const icons = ref([
     id: 1,
     name: "Green",
     icon_file: "/images/iconwebtechnopark/icon_green.png",
-    url: "https://www.google.com/",
+    url: "/about/13",
   },
   {
     id: 2,
     name: "KM",
     icon_file: "/images/iconwebtechnopark/icon_km.png",
-    url: "https://www.google.com/",
+    url: "/about/14",
   },
   {
     id: 3,
     name: "MOU",
     icon_file: "/images/iconwebtechnopark/icon_mou.png",
-    url: "https://www.google.com/",
+    url: "/about/15",
   },
   {
     id: 4,
     name: "Standard",
     icon_file: "/images/iconwebtechnopark/icon_standard.png",
+    url: "/about/16",
   },
 ]);
 </script>
