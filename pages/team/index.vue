@@ -106,7 +106,6 @@
                               </span>
                             </div>
                             <div class="team__contact-wrapper">
-
                               <p
                                 class="team-email mt-20"
                                 style="overflow-wrap: anywhere"
@@ -523,6 +522,7 @@ const { data: res } = await useAsyncData("team", async () => {
   let data = await $fetch(`${runtimeConfig.public.apiBase}/team`, {
     params: {
       ...search.value,
+      perPage: 100,
     },
   });
   return data;
