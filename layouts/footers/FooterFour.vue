@@ -14,23 +14,23 @@
                 <div class="footer__widget-content">
                   <ul>
                     <li>
-                      <nuxt-link href="/home-agency">โครงการฝึกอบรม</nuxt-link>
+                      <nuxt-link href="#">โครงการฝึกอบรม</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link href="/portfolio-masonry">สมัครงาน</nuxt-link>
+                      <nuxt-link href="#">สมัครงาน</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link to="/about"
+                      <nuxt-link to="#"
                         >อุทยานเทคโนโลยี กรุงเทพฯ</nuxt-link
                       >
                     </li>
                     <li>
-                      <nuxt-link href="/portfolio-metro"
+                      <nuxt-link href="#"
                         >อุทยานเทคโนโลยี ปราจีนฯ</nuxt-link
                       >
                     </li>
                     <li>
-                      <nuxt-link href="/portfolio-masonry"
+                      <nuxt-link href="#"
                         >อุทยานเทคโนโลยี ระยอง</nuxt-link
                       >
                     </li>
