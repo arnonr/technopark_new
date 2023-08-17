@@ -246,4 +246,7 @@ export default {
 }
 
 
+.header__info-item {
+    margin-right: 30px;
+}
 </style>
