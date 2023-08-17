@@ -104,14 +104,8 @@
                                   />
                                 </svg>
                               </span>
-                              <!-- <p>Get touch with me</p> -->
                             </div>
                             <div class="team__contact-wrapper">
-                              <!-- <p class="team-tel">
-                                <i class="fa fa-phone"></i> {{ it.phone }}
-                              </p> -->
-                              <!-- <div class="row">
-                                <div class="col-md-12"> -->
 
                               <p
                                 class="team-email mt-20"

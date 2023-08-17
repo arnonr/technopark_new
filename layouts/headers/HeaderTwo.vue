@@ -68,7 +68,7 @@
                     </div>
                     <div class="header__info-content">
                       <h4>โทรศัพท์:</h4>
-                      <p><a href="tel:964-742-44-763">02 555 2270</a></p>
+                      <p><a href="tel:964-742-44-763">02 555 2000</a></p>
                     </div>
                   </div>
                   <div
@@ -106,7 +106,7 @@
                       <h4>อีเมล:</h4>
                       <p>
                         <a href="mailto:harry@lawyer.com"
-                          >contact@kmutnb.ac.th</a
+                          >contact@technopark.kmutnb.ac.th</a
                         >
                       </p>
                     </div>

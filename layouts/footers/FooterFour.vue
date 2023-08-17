@@ -54,7 +54,7 @@
                     </p>
                     <p>
                       <span class="fw-bold">โทรศัพท์</span> : +66 2 555-2000<br />
-                      <span class="fw-bold">แฟกซ์</span> : +66 2 587-4350<br />
+                      <!-- <span class="fw-bold">แฟกซ์</span> : +66 2 587-4350<br /> -->
                       <span class="fw-bold">อีเมล</span> :
                       contact@technopark.kmutnb.ac.th
                     </p>
