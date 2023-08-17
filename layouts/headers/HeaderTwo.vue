@@ -68,7 +68,7 @@
                     </div>
                     <div class="header__info-content">
                       <h4>โทรศัพท์:</h4>
-                      <p><a href="tel:964-742-44-763">02 555 2000</a></p>
+                      <p><a href="tel:964-742-44-763">025552000</a></p>
                     </div>
                   </div>
                   <div
