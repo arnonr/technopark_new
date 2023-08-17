@@ -144,8 +144,9 @@ export default {
         //   pages: true,
           submenus: [
             { title: "ความเป็นมา", link: "/about/2" },
-            { title: "ปรัชญา/ปณิธาน/วิสัยทัศน์", link: "/about/3" },
+            { title: "วิสัยทัศน์/พันธกิจ", link: "/about/3" },
             { title: "โครงสร้างองค์กร", link: "/about/4" },
+            { title: "โครงสร้างบริหาร", link: "/about/5" },
             { title: "บุคลากร", link: "/team" },
           ],
           //   mega_menus: [
