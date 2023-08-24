@@ -20,11 +20,11 @@
                       <nuxt-link href="#">สมัครงาน</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link to="#"
-                        >อุทยานเทคโนโลยี กรุงเทพฯ</nuxt-link
+                      <nuxt-link to="http://technopark.kmutnb.ac.th/booking" target="_blank"
+                        >จองห้องประชุม</nuxt-link
                       >
                     </li>
-                    <li>
+                    <!-- <li>
                       <nuxt-link href="#"
                         >อุทยานเทคโนโลยี ปราจีนฯ</nuxt-link
                       >
@@ -33,7 +33,7 @@
                       <nuxt-link href="#"
                         >อุทยานเทคโนโลยี ระยอง</nuxt-link
                       >
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
