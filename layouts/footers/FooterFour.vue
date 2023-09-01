@@ -20,7 +20,7 @@
                       <nuxt-link href="#">สมัครงาน</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link to="http://technopark.kmutnb.ac.th/booking" target="_blank"
+                      <nuxt-link to="http://technopark.kmutnb.ac.th/booking/" target="_blank"
                         >จองห้องประชุม</nuxt-link
                       >
                     </li>
