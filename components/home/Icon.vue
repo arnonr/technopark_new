@@ -33,25 +33,25 @@ const props = defineProps({
 const icons = ref([
   {
     id: 1,
-    name: "Green",
+    name: "Sustainable",
     icon_file: "/images/iconwebtechnopark/icon_green.png",
     url: "/about/13",
   },
   {
     id: 2,
-    name: "KM",
+    name: "Knowledge Sharing",
     icon_file: "/images/iconwebtechnopark/icon_km.png",
     url: "/about/14",
   },
   {
     id: 3,
-    name: "MOU",
+    name: "Co-operation",
     icon_file: "/images/iconwebtechnopark/icon_mou.png",
     url: "/about/15",
   },
   {
     id: 4,
-    name: "Standard",
+    name: "Award & Standard Certificates",
     icon_file: "/images/iconwebtechnopark/icon_standard.png",
     url: "/about/16",
   },
