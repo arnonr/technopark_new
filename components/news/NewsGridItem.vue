@@ -6,9 +6,9 @@
     }`"
   >
     <div class="blog__item-10 white-bg transition-3 mb-30 fix">
-      <div class="blog__thumb-10 w-img fix">
+      <div class="blog__thumb-10 w-img fix w-img-news">
         <nuxt-link v-if="item.news_file" :to="'news/' + item.id">
-          <img :src="item.news_file" alt="blog img" />
+          <img :src="item.news_file" alt="blog img"  class="img-news" />
         </nuxt-link>
       </div>
       <div class="blog__content-10">
@@ -80,7 +80,17 @@ export default {
 }
 
 .blog__grid-item .blog__title-10 {
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 1025px) {
+  .w-img-news {
+    max-height: 190px;
+    min-height: 190px;
+  }
+  .img-news{
+    min-height: 190px !important;
+  }
 }
 </style>
