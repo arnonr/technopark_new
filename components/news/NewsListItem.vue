@@ -16,8 +16,8 @@
                   {{ item.title }}
                 </h3>
 
-                <p style="text-align: justify; text-indent: 2em">
-                  {{ item.detail.replace( /(<([^>]+)>)/ig, '').slice(0, 400)  }}...
+                <p style="text-align: justify; text-indent: 2em" v-html="item.detail.replace(/(<([^>]+)>)/gi, '').slice(0, 400)+'...'">
+             
                 </p>
               </div>
 
