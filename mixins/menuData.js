@@ -145,6 +145,7 @@ export default {
           submenus: [
             { title: "ความเป็นมา", link: "/about/2" },
             { title: "วิสัยทัศน์/พันธกิจ", link: "/about/3" },
+            { title: "สัญลักษณ์", link: "/about/17" },
             { title: "โครงสร้างองค์กร", link: "/about/4" },
             { title: "โครงสร้างบริหาร", link: "/about/5" },
             { title: "บุคลากร", link: "/team" },
