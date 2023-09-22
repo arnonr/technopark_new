@@ -45,8 +45,8 @@
           </div>
         </div>
         <div class="offcanvas__inner mb-80 d-none d-lg-block">
-          <h4>We help to create visual strategies.</h4>
-          <p>We want to hear from you. Let us know how we can help.</p>
+          <h4>Technopark</h4>
+          <p>KMUTNB</p>
           <img src="~/assets/img/shape/offcanvas-img-1.png" alt="" />
         </div>
 
