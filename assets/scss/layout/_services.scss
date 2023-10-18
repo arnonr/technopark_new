@@ -627,7 +627,7 @@
         &-4{
             font-family: var(--tp-ff-space);
             font-size: 24px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             margin-bottom: 12px;
             transition-duration: .4s;
             transition-delay: .1s;
@@ -731,7 +731,7 @@
         &-15{
             font-size: 24px;
             line-height: 1.17;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
 
             & a{
                 &:hover{
@@ -1233,7 +1233,7 @@
             font-weight: 700;
             font-size: 14px;
             text-align: right;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             color: var(--tp-common-black);
             padding-bottom: 2px;
 
@@ -1261,7 +1261,7 @@
                 font-family: var(--tp-ff-inter);
                 font-weight: 500;
                 font-size: 15px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: var(--tp-common-black);
 
                 & span{
@@ -1325,7 +1325,7 @@
                 font-family: var(--tp-ff-space);
                 font-weight: 500;
                 font-size: 16px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: var(--tp-common-white);
                 &:hover{
                     color: var(--tp-theme-1);
@@ -1378,7 +1378,7 @@
         top: 100px;
         &-title{
             font-size: 24px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             margin-bottom: 22px;
 
         }
@@ -1541,7 +1541,7 @@
         &-title{
             font-weight: 500;
             font-size: 22px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             margin-bottom: 18px;
 
         }
@@ -1678,7 +1678,7 @@
         &-text{
             &-title{
                 font-size: 24px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: var(--tp-common-black-solid);
                 margin-bottom: 9px;
 
@@ -1690,7 +1690,7 @@
         &-list{
             &-title{
                 font-size: 24px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: var(--tp-common-black-solid);
                 margin-bottom: 15px;
             }
@@ -1752,7 +1752,7 @@
     font-family: var(--tp-ff-space);
     font-weight: 700;
     font-size: 14px;
-    letter-spacing: -0.02em;
+    letter-spacing: 0em;
     color: var(--tp-common-white);
     transition-delay: 0s;
     transition-duration: .3s;

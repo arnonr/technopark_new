@@ -555,7 +555,7 @@
 	font-family: var(--tp-ff-space);
 	font-weight: 500;
 	font-size: 16px;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	color: var(--tp-common-black);
 	background: #FFFFFF;
 	border: 1px solid #EAEAEF;
@@ -703,7 +703,7 @@
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 
 	& i,
 	& svg{
@@ -1160,7 +1160,7 @@
 	padding: 11px 28px 13px;
 	background-color: var(--tp-theme-4);
 	font-weight: 600;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 
 	&:hover{
 		color: var(--tp-common-white);
@@ -1175,7 +1175,7 @@
 	padding: 12px 30px 12px;
 	background-color: var(--tp-common-orange);
 	font-weight: 500;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	text-align: center;
 	border-radius: 8px;
 
@@ -1192,7 +1192,7 @@
 	padding: 22px 52px 21px;
 	background-color: var(--tp-common-orange-2);
 	font-weight: 600;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	text-align: center;
 	border-radius: 8px;
 	
@@ -1210,7 +1210,7 @@
 	color: var(--tp-common-white);
 	padding: 16px 45px 18px;
 	background-color: var(--tp-theme-5);
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	text-align: center;
 	border-radius: 8px;
 
@@ -1247,7 +1247,7 @@
 	padding: 11px 30px 13px;
 	background-color: var(--tp-theme-5);
 	font-weight: 500;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	text-align: center;
 	border-radius: 8px;
 
@@ -1498,7 +1498,7 @@
 	font-weight: 500;
 	font-size: 16px;
 	color: var(--tp-common-white);
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 
 	&:hover{
 		color: var(--tp-common-white);
@@ -1552,7 +1552,7 @@
 	font-family: var(--tp-ff-space);
 	padding: 6px 23px 6px;
 	border: 1px solid var(--tp-border-5);
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 
 	& i,
 	& svg{
@@ -1662,7 +1662,7 @@
 	text-align: center;
 	font-family: var(--tp-ff-space);
 	padding: 10px 31px;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	position: relative;
 	z-index: 1;
 	text-transform: capitalize;
@@ -1691,7 +1691,7 @@
 	text-align: center;
 	font-family: var(--tp-ff-space);
 	padding: 5px 23px;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	position: relative;
 	z-index: 1;
 	text-transform: capitalize;
@@ -1725,7 +1725,7 @@
 	text-align: center;
 	font-family: var(--tp-ff-space);
 	padding: 9px 31px 10px;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	position: relative;
 	z-index: 1;
 	text-transform: capitalize;
@@ -1789,7 +1789,7 @@
 	text-align: center;
 	font-family: var(--tp-ff-space);
 	padding: 9px 22px;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	position: relative;
 	z-index: 1;
 	text-transform: capitalize;
@@ -1817,7 +1817,7 @@
 	font-family: var(--tp-ff-oswald);
 	text-transform: uppercase;
 	padding: 9px 27px;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	position: relative;
 	z-index: 1;
 
@@ -1845,7 +1845,7 @@
 	font-family: var(--tp-ff-space);
 	text-transform: capitalize;
 	padding: 11px 42px 13px;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	position: relative;
 	z-index: 1;
 
@@ -1872,7 +1872,7 @@
 	font-family: var(--tp-ff-space);
 	text-transform: capitalize;
 	padding: 12px 42px;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	position: relative;
 	z-index: 1;
 	border-radius: 6px;
@@ -1899,7 +1899,7 @@
 	text-align: center;
 	text-transform: capitalize;
 	padding: 8px 37px 10px;
-	letter-spacing: -0.02em;
+	letter-spacing: 0em;
 	position: relative;
 	z-index: 1;
 	border-radius: 6px;

@@ -21,7 +21,7 @@ import blogData from "~~/mixins/blogData";
 import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
 import SliderBreadcrumb from "~~/components/breadcrumb/SliderBreadcrumb.vue";
 import BlogGridTwoArea from "~~/components/blogs/BlogGridTwoArea.vue";
-import Footer from "~~/layouts/footers/Footer.vue";
+import Footer from "~~/layouts/footers/FooterOne.vue";
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
 export default {

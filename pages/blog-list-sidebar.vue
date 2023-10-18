@@ -11,7 +11,7 @@
 <script>
 import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
 import SliderBreadcrumb from "~~/components/breadcrumb/SliderBreadcrumb.vue";
-import Footer from "~~/layouts/footers/Footer.vue";
+import Footer from "~~/layouts/footers/FooterOne.vue";
 import BlogListArea from '~~/components/blogs/BlogListArea.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 

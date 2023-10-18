@@ -1388,7 +1388,7 @@
             font-family: var(--tp-ff-oswald);
             line-height: 1.05;
             margin-bottom: 52px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
 
             @media #{$xl}{
                 font-size: 85px;
@@ -1441,7 +1441,7 @@
             color: var(--tp-common-white);
             text-transform: capitalize;
             margin-bottom: 10px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             font-family: var(--tp-ff-space);
 
             @media #{$xl}{
@@ -2231,7 +2231,7 @@
                 font-family: var(--tp-ff-space);
                 font-size: 18px;
                 line-height: 1.11;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: var(--tp-common-white);
                 margin-bottom: 45px;
             }
@@ -2254,7 +2254,7 @@
                 font-family: var(--tp-ff-rajdhani);
                 font-size: 18px;
                 line-height: 1.11;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: var(--tp-common-white);
                 margin-bottom: 45px;
                 animation-delay: .6s;
@@ -3675,7 +3675,7 @@
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             color: #FFFFFF;
             @include transform(rotate(-90deg) translate(-38px, -28px));
             position: relative;

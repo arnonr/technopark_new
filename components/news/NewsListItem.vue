@@ -2,13 +2,13 @@
   <div class="blog__list-item">
     <div class="blog__item-10 white-bg transition-3 fix">
       <div class="row">
-        <div class="col-xl-5 col-lg-12 col-md-6">
+        <div class="col-xl-2 col-lg-2 col-md-3">
           <nuxt-link :href="'/news/' + item.id">
             <div class="blog__thumb-10 w-img fix">
               <img :src="item.news_file" alt="" /></div
           ></nuxt-link>
         </div>
-        <div class="col-xl-7 col-lg-12 col-md-6">
+        <div class="col-xl-10 col-lg-10 col-md-9">
           <nuxt-link :href="'/news/' + item.id">
             <div class="blog__content-10">
               <div class="blog__content-10-top">
@@ -16,13 +16,13 @@
                   {{ item.title }}
                 </h3>
 
-                <p style="text-align: justify; text-indent: 2em" v-html="item.detail.replace(/(<([^>]+)>)/gi, '').slice(0, 400)+'...'">
+                <!-- <p style="text-align: justify; text-indent: 2em" v-html="item.detail.replace(/(<([^>]+)>)/gi, '').slice(0, 400)+'...'">
              
-                </p>
+                </p> -->
               </div>
 
               <div
-                class="blog__content-10-bottom d-flex align-items-center flex-wrap"
+                class="blog__content-10-bottom d-flex align-items-center flex-wrap mt-30"
               >
                 <div class="blog__meta-author-10 d-flex align-items-center">
                   <div class="blog__meta-author-content-10">
@@ -82,6 +82,25 @@ export default {
 }
 
 .blog__title-10 {
-  color: #ff6600;
+  color: var(--tp-text-body);
+}
+
+.blog__content-10 {
+  min-height: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog__content-10 {
+    margin-top: 20px;
+  }
+}
+
+.blog__list-item .blog__content-10 {
+  padding-top: 0px;
+}
+
+.blog__list-item .blog__title-10 {
+  font-size: 18px;
+  letter-spacing: 0.3px;
 }
 </style>

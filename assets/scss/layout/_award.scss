@@ -199,7 +199,7 @@
             font-family: var(--tp-ff-space);
             font-weight: 700;
             font-size: 28px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             color: var(--tp-common-white);
             margin-bottom: 6px;
 
@@ -215,7 +215,7 @@
             font-weight: 700;
             font-size: 30px;
             line-height: 1;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             color: var(--tp-common-black-solid);
             margin-bottom: 7px;
 
@@ -272,7 +272,7 @@
             & > p{
                 font-family: var(--tp-ff-inter);
                 font-size: 15px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: #525258;
                 margin-bottom: 0;
             }

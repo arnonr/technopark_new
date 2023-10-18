@@ -422,7 +422,7 @@
         &-4{
             font-family: var(--tp-ff-space);
             font-size: 23px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
 
             & a{
                 &:hover{
@@ -563,7 +563,7 @@
         &-10{ 
             font-size: 20px;
             line-height: 1.2;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             margin-bottom: 13px;
 
             & a{
@@ -878,7 +878,7 @@
             & p{
                 font-family: var(--tp-ff-inter);
                 font-size: 16px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 line-height: 22px;
                 margin-bottom: 15px; 
             }
@@ -1886,7 +1886,7 @@
                 font-family: var(--tp-ff-inter);
                 font-weight: 500;
                 font-size: 15px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: var(--tp-common-black);
 
                 & span{
@@ -2049,7 +2049,7 @@
             & .tp-btn-border-2{
                 font-size: 16px;
                 font-weight: 50;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 padding: 9px 32px 11px;
             }
         }
@@ -3109,7 +3109,7 @@
         &-title{
             font-size: 30px;
             line-height: 1.27;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             margin-bottom: 35px;
 
             @media #{$xs}{
@@ -3133,7 +3133,7 @@
             &-3{
                 font-size: 22px;
                 line-height: 1.27;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: var(--tp-common-black-solid);
             }
         }
@@ -3216,7 +3216,7 @@
         &-title{
             font-size: 34px;
             line-height: 1;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             color: var(--tp-common-black-solid);
             margin-bottom: 15px;
 
@@ -3333,7 +3333,7 @@
             & h4{
                 font-size: 18px;
                 line-height: 1;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 margin-bottom: 0;
 
                 & a{
@@ -3501,7 +3501,7 @@
             &-title{
                 font-size: 34px;
                 line-height: 1;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 margin-bottom: 10px;
             }
 
@@ -3553,7 +3553,7 @@
         &-title{
             font-size: 34px;
             line-height: 1;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             margin-bottom: 37px;
         }
         &-box{
@@ -3642,7 +3642,7 @@
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 1;
-                    letter-spacing: -0.02em;
+                    letter-spacing: 0em;
                     color: var(--tp-common-black);
                     border: 1px solid #EAEAEF;
                     padding: 7px 18px;
@@ -3803,7 +3803,7 @@
         &-title{
             font-size: 30px;
             line-height: 1;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             margin-bottom: 35px;
         }
     }
@@ -3827,7 +3827,7 @@
             font-size: 22px;
             line-height: 1.36;
             text-align: center;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             color: var(--tp-common-black);
             margin-bottom: 0;
         }
@@ -4368,7 +4368,7 @@
 
             @include tp-placeholder{
                 font-size: 15px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: #919193;
             }
         }

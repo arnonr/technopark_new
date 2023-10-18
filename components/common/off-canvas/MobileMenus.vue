@@ -2,25 +2,32 @@
   <nav class="mean-nav">
     <ul>
       <template v-for="(menu, i) in menuData" :key="i">
-
         <li
           v-if="!menu.hasDropdown && !menu.megaMenu && !menu.pages"
           class="has-dropdown"
         >
-          <nuxt-link :href="menu.link">{{ menu.title }}</nuxt-link>
+          <nuxt-link
+            :href="menu.link"
+            @click="$emit('close:Offcanvas', false)"
+            >{{ $t(menu.title) }}</nuxt-link
+          >
         </li>
 
         <li
           v-if="menu.hasDropdown && !menu.megaMenu && !menu.pages"
           class="has-dropdown"
         >
-          <nuxt-link :href="menu.link">{{ menu.title }}</nuxt-link>
+          <nuxt-link :href="menu.link">{{ $t(menu.title) }}</nuxt-link>
           <ul
             class="submenu"
             :style="{ display: navTitle === menu.title ? 'block' : 'none' }"
           >
             <li v-for="(sub, i) in menu.submenus" :key="i">
-              <nuxt-link :href="sub.link">{{ sub.title }}</nuxt-link>
+              <nuxt-link
+                :href="sub.link"
+                @click="$emit('close:Offcanvas', false)"
+                >{{ $t(sub.title) }}</nuxt-link
+              >
             </li>
           </ul>
           <a
@@ -38,7 +45,7 @@
           v-if="menu.megaMenu && !menu.pages"
           class="has-dropdown has-mega-menu"
         >
-          <nuxt-link :href="menu.link">{{ menu.title }}</nuxt-link>
+          <nuxt-link :href="menu.link">{{ $t(menu.title) }}</nuxt-link>
           <ul
             class="mega-menu"
             :style="{ display: navTitle === menu.title ? 'block' : 'none' }"
@@ -53,7 +60,9 @@
                 }"
               >
                 <li v-for="(sub_m, i) in mega_m.submenus" :key="i">
-                  <nuxt-link :href="sub_m.link">{{ sub_m.title }}</nuxt-link>
+                  <nuxt-link :href="sub_m.link">
+                    {{ $t(sub_m.title) }}
+                  </nuxt-link>
                 </li>
               </ul>
               <a
@@ -130,6 +139,7 @@ import menuData from "~~/mixins/menuData";
 export default {
   name: "MobileMenus",
   mixins: [menuData],
+  emits: ["close:Offcanvas"],
   setup() {
     const navTitle = ref("");
     const subMenu = ref("");

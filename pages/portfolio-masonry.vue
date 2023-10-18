@@ -10,7 +10,7 @@
 <script>
 import PortfolioMasonry from '~~/components/portfolios/portfolio-page/PortfolioMasonry.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
-import Footer from '~~/layouts/footers/Footer.vue';
+import Footer from '~~/layouts/footers/FooterOne.vue';
 import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
 
 export default {

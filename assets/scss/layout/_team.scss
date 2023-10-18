@@ -406,7 +406,7 @@
 
         &-8{
             font-size: 22px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             line-height: 1;
             color: var(--tp-common-white);
             margin-bottom: 0;
@@ -585,7 +585,7 @@
             font-weight: 700;
             font-size: 14px;
             text-align: right;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             color: var(--tp-common-black);
             padding-bottom: 2px;
 
@@ -689,7 +689,7 @@
         &-title{
             font-family: var(--tp-ff-inter);
             font-size: 44px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
 
             @media #{$xs}{
                 font-size: 35px;

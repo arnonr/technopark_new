@@ -23,7 +23,7 @@ import ServicesVision from '~~/components/vision/ServicesVision.vue';
 import HomePortfolio from '~~/components/portfolios/HomePortfolio.vue';
 import ServicesSupportArea from '~~/components/supports/ServicesSupportArea.vue';
 import ServicesSubscribe from '~~/components/subscribe/ServicesSubscribe.vue';
-import FooterFour from '~~/layouts/footers/FooterFour.vue';
+import FooterFour from '~~/layouts/footers/FooterOne.vue';
 
 export default {
   components: {

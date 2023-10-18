@@ -12,7 +12,7 @@
 import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
 import BlogMasonryBreadcrumb from '~~/components/breadcrumb/BlogMasonryBreadcrumb.vue';
 import BlogMasonryArea from '~~/components/blogs/BlogMasonryArea.vue';
-import Footer from "~~/layouts/footers/Footer.vue";
+import Footer from "~~/layouts/footers/FooterOne.vue";
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
 export default {

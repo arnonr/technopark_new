@@ -61,12 +61,13 @@ export default {
                 <span class="tp-swiper-fraction-divide"></span>
               <span class="${totalClass}"></span>`;
     };
-
+    
     const items = ref([]);
     const { data: res } = await useAsyncData("banner", async () => {
       let data = await $fetch(`${runtimeConfig.public.apiBase}/banner`, {
         params: {
           is_publish: 1,
+          lang: useCookie("lang").value
         },
       });
       return data;
@@ -90,5 +91,9 @@ export default {
 
 .slider__bg-12 {
   background: #fff;
+}
+
+.slider__nav-arrow-12 button {
+    border-radius: 50%;
 }
 </style>

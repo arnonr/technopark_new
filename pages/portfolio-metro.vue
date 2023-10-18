@@ -9,7 +9,7 @@
 
 <script>
 import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
-import Footer from '~~/layouts/footers/Footer.vue';
+import Footer from '~~/layouts/footers/FooterOne.vue';
 import MetroStyle from '~~/components/portfolios/portfolio-page/MetroStyle.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 

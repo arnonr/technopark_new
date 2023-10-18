@@ -3,18 +3,19 @@
     <li
       v-for="(menu, i) in menuData"
       :key="i"
-      :class="`${menu.hasDropdown ? 'has-dropdown': ''}${menu.megaMenu ? 'has-dropdown has-mega-menu' : ''}`"
+      :class="`${menu.hasDropdown ? 'has-dropdown' : ''}${
+        menu.megaMenu ? 'has-dropdown has-mega-menu' : ''
+      }`"
     >
       <NuxtLink :to="menu.link">
-        {{ menu.title }}
+        {{ $t(menu.title) }}
       </NuxtLink>
       <ul v-if="menu.hasDropdown" class="submenu">
         <li v-for="(sub, i) in menu.submenus" :key="i" class="submenu-item">
           <NuxtLink :to="sub.link">
-            {{ sub.title }}
-            <hr style="width:100%;color:#ddd;padding:0px;margin:0;">
+            {{ $t(sub.title) }}
+            <hr style="width: 100%; color: #ddd; padding: 0px; margin: 0" />
           </NuxtLink>
-         
         </li>
       </ul>
       <ul v-if="menu.mega_menus" class="mega-menu">
@@ -40,25 +41,37 @@ import menuData from "~~/mixins/menuData";
 
 export default {
   mixins: [menuData],
+
 };
 </script>
 
 <style scoped>
+.main-menu-4 ul li a {
+  color: var(--tp-common-black);
+  margin-right: 2em;
+}
 .main-menu-4 ul li:hover > a {
-    color: #000;
+  color: var(--tp-common-white);
 }
 
 .main-menu-4 ul li:hover > a::after {
-    color: #000;
+  color: var(--tp-common-white);
 }
 
-
 .main-menu ul li .submenu li a::before {
-    display: none
+  display: none;
 }
 
 .main-menu ul li .submenu li:hover > a {
-    padding-left: 25px;
+  padding-left: 25px;
+}
+
+.main-menu-4 ul li.has-dropdown a::after {
+  color: var(--tp-common-black);
+}
+
+.main-menu-4 ul li.has-dropdown:hover a::after {
+  color: var(--tp-common-white);
 }
 
 /* .submenu-item {
@@ -70,7 +83,7 @@ export default {
 } */
 
 .main-menu ul li .submenu {
-    min-width: 250px;
-    line-height: 2.5em;
+  min-width: 250px;
+  line-height: 2.5em;
 }
 </style>

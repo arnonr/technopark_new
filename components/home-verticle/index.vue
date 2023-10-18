@@ -88,7 +88,7 @@ export default {
   setup() {
     const utils = useUtilsStore();
     const onSwiper = (swiper) => { 
-      // console.log(swiper);
+        
     };
     const onSlideChange = (swiper) => {
       utils.setIsActiveIndex(swiper.activeIndex);

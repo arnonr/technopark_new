@@ -10,7 +10,7 @@
 
 <script>
 import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
-import Footer from '~~/layouts/footers/Footer.vue';
+import Footer from '~~/layouts/footers/FooterOne.vue';
 import BlogBreadcrumb from '~~/components/breadcrumb/BlogBreadcrumb.vue';
 import BlogPostBoxArea from '~~/components/blogs/BlogPostBoxArea.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';

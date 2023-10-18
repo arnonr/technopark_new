@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`offcanvas__area offcanvas__area-4 ${
+    :class="`d-lg-none offcanvas__area offcanvas__area-4 ${
       isOffCanvasOpen ? 'offcanvas-opened' : ''
     }`"
   >
@@ -40,12 +40,16 @@
         >
           <div class="offcanvas__logo logo">
             <nuxt-link href="/">
-              <img src="~/assets/img/iconwebtechnopark/logo.png" style="width:20%" alt="logo" />
+              <img
+                src="~/assets/img/iconwebtechnopark/logo-sicc.png"
+                style="width: 20%"
+                alt="logo"
+              />
             </nuxt-link>
           </div>
         </div>
         <div class="offcanvas__inner mb-80 d-none d-lg-block">
-          <h4>Technopark</h4>
+          <h4>SICC</h4>
           <p>KMUTNB</p>
           <img src="~/assets/img/shape/offcanvas-img-1.png" alt="" />
         </div>
@@ -55,7 +59,9 @@
         >
           <div class="mean-bar">
             <!-- MobileMenus start -->
-            <mobile-menus />
+            <mobile-menus
+              @close:Offcanvas="isOffCanvasOpen = $event"
+            />
             <!-- MobileMenus end -->
           </div>
         </div>
@@ -111,6 +117,6 @@ export default {
 
 <style scoped>
 .offcanvas__area-4 {
-  background-color: #ff6600
+  background-color: #ffcb05;
 }
 </style>

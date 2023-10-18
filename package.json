@@ -8,24 +8,31 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "dayjs-nuxt": "^1.1.2",
-    "nuxt": "3.0.0"
+    "@intlify/unplugin-vue-i18n": "^1.4.0",
+    "@nuxtjs/i18n": "^8.0.0-rc.5",
+    "dayjs-nuxt": "^1.2.7",
+    "nuxt": "3.0.0",
+    "vue-i18n": "^9.5.0"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.6",
+    "@vuepic/vue-datepicker": "^7.1.0",
     "@yeger/vue-masonry-wall": "^3.4.3",
     "bootstrap": "^5.2.3",
-    "dayjs": "^1.11.9",
+    "dayjs": "^1.11.10",
     "install": "^0.13.0",
     "npm": "^9.8.1",
+    "nuxt-vue-select": "^0.1.4",
     "or": "^0.2.0",
     "parallax-js": "^3.1.0",
     "pinia": "^2.0.30",
     "sal.js": "^0.8.5",
     "sass": "^1.57.1",
+    "sweetalert2": "^11.7.32",
     "swiper": "^9.0.2",
     "vue-awesome-swiper": "^5.0.1",
     "vue-easy-lightbox": "^1.11.0",
+    "vue-select": "^4.0.0-beta.6",
     "vue3-carousel": "^0.2.9"
   }
 }

@@ -1,24 +1,25 @@
 <template>
-  <section
-    :class="`brand__area ${el_style ? 'pt-30' : ''}`"
-    style="background-color: #ffd8be"
-  >
+  <section :class="`brand__area ${el_style ? 'pt-30' : ''} bg-grey`">
     <div class="container">
       <div
-        class="brand__item-wrapper-6 d-flex flex-wrap justify-content-between"
+        class="brand__item-wrapper-6 d-flex flex-wrap justify-content-center mx-auto"
       >
+        <!--  -->
         <div
-          class="brand__item-6"
+          class="card project-card"
+          style="width: 15rem; margin-bottom: 30px;"
           v-for="(it, index) in project"
           :key="index"
-          style="margin-bottom: 30px"
         >
           <NuxtLink class="project-link-img" :to="it.url">
-            <img :src="it.project_file" :alt="it.name" />
-            <br />
-            <span class="fw-bold">{{ it.name }}</span>
+            <!-- <img src="..." class="card-img-top" alt="..." /> -->
+            <img :src="it.project_file" :alt="it.name" class="card-img-top" />
+            <div class="card-body text-center">
+              <span class="fw-bold project-name">{{ it.name }}</span>
+            </div>
           </NuxtLink>
         </div>
+        <!--  -->
       </div>
     </div>
   </section>
@@ -34,23 +35,23 @@ const props = defineProps({
 
 const project = ref([
   {
-    name: "ศูนย์ปฏิบัติการ",
-    project_file: "/images/iconwebtechnopark/center_black.png",
-    url: "/about/7",
+    name: "Sample Submission",
+    project_file: "/images/iconwebtechnopark/icon_home1.png",
+    url: "/sample-submission",
   },
   {
-    name: "หลักสูตร",
-    project_file: "/images/iconwebtechnopark/program_black.png",
-    url: "/about/6",
+    name: "Equipment & Rate",
+    project_file: "/images/iconwebtechnopark/icon_home2.png",
+    url: "/equipment-and-rate",
   },
   {
-    name: "65 ปี มจพ.",
-    project_file: "/images/iconwebtechnopark/65_black.png",
+    name: "Direction",
+    project_file: "/images/iconwebtechnopark/icon_home3.png",
     url: "/about/8",
   },
   {
-    name: "ผลงานโดดเด่น",
-    project_file: "/images/iconwebtechnopark/project_black.png",
+    name: "Department Facility",
+    project_file: "/images/iconwebtechnopark/icon_home4.png",
     url: "/about/9",
   },
 ]);
@@ -65,5 +66,39 @@ const project = ref([
   /* https://angel-rs.github.io/css-color-filter-generator/ */
   filter: brightness(0) saturate(100%) invert(55%) sepia(77%) saturate(4539%)
     hue-rotate(0deg) brightness(101%) contrast(106%);
+}
+
+.bg-grey {
+  background-color: var(--tp-common-footer-bg-grey-4);
+}
+
+.project-card {
+  background-color: #ccc;
+  border-color: var(--tp-common-footer-bg-grey-4);
+  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.card-img-top {
+  width: 70%;
+  margin-bottom: 10px;
+  filter: invert(5%) sepia(40%) saturate(8%) hue-rotate(48deg) brightness(90%)
+    contrast(99%);
+}
+
+.project-card:hover {
+  background-color: var(--tp-theme-1);
+}
+
+.project-card:hover .card-img-top {
+  filter: none;
+}
+
+.project-name {
+  font-size: 1.2em;
 }
 </style>

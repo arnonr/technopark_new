@@ -403,7 +403,7 @@
             font-weight: 700;
             font-size: 44px;
             line-height: 1;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             position: relative;
             display: inline-block;
             color: var(--tp-text-25);
@@ -412,7 +412,7 @@
 
         &-10{
             font-size: 26px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             margin-bottom: 17px;
             & a{
                 &:hover{
@@ -438,7 +438,7 @@
         &-14{
             font-size: 24px;
             line-height: 1;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             color: var(--tp-common-black-solid);
         }
 
@@ -1060,7 +1060,7 @@
                         font-weight: 700;
                         font-size: 50px;
                         line-height: .8;
-                        letter-spacing: -0.02em;
+                        letter-spacing: 0em;
                         color: var(--tp-common-black);
                         position: relative;
                         padding-left: 0;

@@ -1,24 +1,25 @@
 <template>
-  <div class="fix">
-    <HeaderTwo />
+  <div :class="'fix ' + useSkin().value" >
+    <Header />
 
     <main>
       <slot></slot>
     </main>
-    <footer-four />
-    <BackToTop/>
+
+    <footer-one />
+    <BackToTop  />
   </div>
 </template>
 
 <script>
-import HeaderTwo from "./headers/HeaderTwo.vue";
-import FooterFour from "./footers/FooterFour.vue";
+import Header from "./headers/Header.vue";
+import FooterOne from "./footers/FooterOne.vue";
 import BackToTop from "./footers/component/BackToTop.vue";
 
 export default {
   components: {
-    HeaderTwo,
-    FooterFour,
+    Header,
+    FooterOne,
     BackToTop,
   },
 };

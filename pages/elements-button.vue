@@ -11,7 +11,7 @@
 import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
 import ElementButtonMain from '~~/elements/elements-button/ElementButtonMain.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
-import Footer from '~~/layouts/footers/Footer.vue';
+import Footer from '~~/layouts/footers/FooterOne.vue';
 
 export default {
   components: {

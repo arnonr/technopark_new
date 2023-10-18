@@ -52,7 +52,7 @@
             font-size: 16px;
             line-height: 1.5;
             margin-bottom: 23px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
         }
 
         &-3{
@@ -97,7 +97,7 @@
 
                 font-size: 16px;
                 line-height: 24px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 padding-right: 25px;
                 margin-bottom: 23px;
 
@@ -207,7 +207,7 @@
                 font-family: var(--tp-ff-syne);
                 font-weight: 700;
                 font-size: 40px;
-                letter-spacing: -0.02em;
+                letter-spacing: 0em;
                 color: #7C7C85;
                 margin-bottom: 25px;
 
@@ -1652,7 +1652,7 @@
                     font-family: var(--tp-ff-space);
                     font-weight: 500;
                     font-size: 24px;
-                    letter-spacing: -0.02em;
+                    letter-spacing: 0em;
                     text-transform: uppercase;
                     color: var(--tp-theme-8);
                     margin-bottom: 0;
@@ -2376,7 +2376,7 @@
         &-title{
             font-size: 30px;
             line-height: 1;
-            letter-spacing: -0.02em;
+            letter-spacing: 0em;
             color: var(--tp-common-black);
             margin-bottom: 25px;
         }
@@ -2680,7 +2680,7 @@
                     font-weight: 500;
                     font-size: 15px;
                     line-height: 1;
-                    letter-spacing: -0.02em;
+                    letter-spacing: 0em;
                     color: var(--tp-text-1);
                     position: relative;
                     padding-right: 13px;
@@ -2816,7 +2816,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: -0.02em;
+    letter-spacing: 0em;
     color: var(--tp-common-white);
 
     & span{

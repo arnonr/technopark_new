@@ -11,7 +11,7 @@
 import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
 import ElementsAccordionMain from '~/elements/elements-accordion/ElementsAccordionMain.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
-import Footer from '~~/layouts/footers/Footer.vue';
+import Footer from '~~/layouts/footers/FooterOne.vue';
 
 export default {
   components: {
